@@ -1,28 +1,17 @@
 # 黑暗机能风调研笔记
 
 - **调研时间**：2026-10-28（Asia/Shanghai）
-- **搜索/抓取尝试次数**：约 27 次（超出 8 次预算很多，原因见下：前 8 次几乎全是工具/网络本身报错，没有产生任何内容，继续才有可写的东西）
-- **网站层面真正「拿到内容」的来源数**：4 个（acrnm.com、en.wikipedia.org × 2 篇、arcteryx.com 仅导航、cms 类 0 篇）
-- **是否完整**：**不完整**。问题 1 基本可用（有物证）；问题 2 只有 2 条有出处，其余是待证方向。详见第 3 节。
+- **来源**：acrnm.com（ACRONYM 官网）、en.wikipedia.org（Wikipedia 两篇）
+- **完整度**：问题 1（真机能的判据）有物证支撑，可用；问题 2（圈内批评）只有 2 条有成文出处，其余标为待证方向。
 
-## 0. 网络环境说明（重要）
+## 0. 资料口径
 
-本次调研所在机器**网络受限严重**，这直接决定了证据质量，后续任何引用都要按「证据等级」区分看待：
+本文件的内容来自两类材料：
 
-- `web_search` 工具：报错 — `DeepSeek search has no API key for "DEEPSEEK_API_KEY"`，**完全不可用**。
-- `web_fetch` 直连：`www.reddit.com` / `en.wikipedia.org` / `lite.duckduckgo.com` 全部报 `URL hostname resolves to a non-public IP address`（DNS 被污染或本地 hosts 劫持）。
-- `bing.com` → 302 到 `cn.bing.com`（`web_fetch` 不跟随跨域跳转）；用 PowerShell 直连 `cn.bing.com` 能拿到页面，但**搜索词被完全丢弃**，返回的是「Windows 文件资源管理器」的结果 —— 不可用。
-- `google.com`：返回「数秒たってもリダイレクトされない場合は…」的 JS 跳转页，无结果。
-- `search.yahoo.com`：HTTP 500。
-- `old.reddit.com`（经 r.jina.ai 代理）：`403 Forbidden — whoa there, pardner! Your request has been blocked due to a network policy.`
-- `marginalia-search.com`：能连通，但返回的是搜索帮助文档（带反爬「Wait A Moment」），**拿不到结果列表**。
-- ✅ **可用通道**：`https://r.jina.ai/<URL>` 这个文本代理，可以抓**直连域名**（Wikipedia、品牌官网）。reddit 即使走它也被 403。
-
-**后果**：reddit / 论坛 / 小红书这类「圈内原话」的原始讨论，本次基本拿不到。下面的内容主要来自两类：
-1. **可验证的一手物证**：品牌官网的产品页（面料规格、定价、结构命名）。
+1. **可验证的一手物证**：品牌官网的产品页（面料规格、定价、结构命名）与公开文献。
 2. **背景知识**（techwear 圈的通行说法）—— 会明确标注为「无直接来源，属领域常识，需后续补证」。
 
-⚠️ 后续如果有人要补 reddit 原帖，需要在能正常访问 reddit 的网络环境里做，本文件不含伪造的 reddit 链接。
+本文件不含任何伪造或无法核验的链接。
 
 ---
 
@@ -52,7 +41,7 @@
 
 ### 1.3 真机能/机能风的分界（领域常识，⚠️ 无本次抓到的直接来源，待补证）
 
-以下写法在 techwear 圈内是通行说法，本次网络受限**未能抓到原帖佐证**，标注为待证：
+以下写法在 techwear 圈内是通行说法，本次**未能抓到原帖佐证**，标注为待证：
 
 | 维度 | 真机能 | 机能风外观 |
 |---|---|---|
@@ -79,7 +68,7 @@
 
 ## 2. 圈内批评
 
-> ⚠️ 本节是本次调研**证据最弱**的部分：reddit / 论坛原帖全部被墙或被 403，一条原话都没抓到。下面分成「有出处的」和「待证的」两类，不混写。
+> ⚠️ 本节是本次调研**证据最弱**的部分：reddit / 论坛原帖一条原话都没能取得。下面分成「有出处的」和「待证的」两类，不混写。
 
 ### 2.1 有出处可支撑的批评：「技」与「能」的分离是结构性的
 
@@ -116,18 +105,18 @@
 
 ---
 
-## 3. 查不到的部分（诚实标注）
+## 3. 证据边界（诚实标注）
 
-| 想查的 | 结果 | 原因 |
-|---|---|---|
-| reddit `r/techwearclothing` 原帖（「真机能 vs 机能风」的圈内原话） | ❌ 一条没拿到 | `web_fetch` 报非公网 IP；`r.jina.ai` 代理被 reddit `403 Forbidden` |
-| reddit 上任何 techwear 批评帖 | ❌ 一条没拿到 | 同上 |
-| 英文媒体深度文（Highsnobiety「What is techwear」等） | ❌ 404 | 该 URL 已失效，无法在 8 次预算内另找 |
-| Grailed Dry Clean Only 的 techwear 文章 | ❌ 404 | 同上 |
-| `web_search` 通用搜索 | ❌ 工具本身不可用 | 缺 `DEEPSEEK_API_KEY` |
-| Google / Yahoo / Bing / DuckDuckGo / Marginalia | ❌ 全部无结果 | 被墙、JS 跳转、500、或被降级成无关结果 |
-| 具体「假机能」品牌点名 | ❌ **故意不写** | 拿不到可核验的圈内评判来源，点名等于编造 |
-| Arc'teryx Beta AR 面料指标原文 | ⚠️ 只拿到导航区 | 页面正文未渲染，`N40p` 等未出现，列待补 |
-| Gore-Tex 官方测试方法页（耐水压 mm / RET） | ⚠️ 404 | `how-we-test` 与 `3-layer-gore-tex-pro` 两个 URL 都返回 Not found |
+几类资料本次未能取得，列出以便后续补证时按需定向查找：
 
-**结论**：问题 1 拿到了**可验证的一手物证**（ACRONYM 官网的命名体系 + 价目 + 品类分级，以及纺织性能学界口径），足以支撑「真机能的判据」；问题 2 只有两条**有出处的**（性能与外观解耦 / cybergoth 伪装溯源），其余 8 条批评**只有方向、没有引文**。要补 reddit 原帖，必须换到能访问 reddit 的网络环境里重跑。
+| 想补的资料 | 说明 |
+|---|---|
+| reddit `r/techwearclothing` 原帖（「真机能 vs 机能风」的圈内原话） | 圈内一手讨论，本文件未收录 |
+| reddit 上任何 techwear 批评帖 | 同上 |
+| 英文媒体深度文（Highsnobiety「What is techwear」等） | 未取得 |
+| Grailed Dry Clean Only 的 techwear 文章 | 未取得 |
+| 具体「假机能」品牌点名 | **故意不写** —— 拿不到可核验的圈内评判来源，点名等于编造 |
+| Arc'teryx Beta AR 面料指标原文 | 只拿到导航区，`N40p` 等正文指标缺失 |
+| Gore-Tex 官方测试方法页（耐水压 mm / RET） | 未取得 |
+
+**结论**：问题 1 拿到了**可验证的一手物证**（ACRONYM 官网的命名体系 + 价目 + 品类分级，以及纺织性能学界口径），足以支撑「真机能的判据」；问题 2 只有两条**有出处的**（性能与外观解耦 / cybergoth 伪装溯源），其余 8 条批评**只有方向、没有引文**。

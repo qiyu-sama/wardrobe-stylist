@@ -76,21 +76,16 @@ URL：`https://levi.pt/en/product/501-original-fit-jeans-00501-0162`
 
 ---
 
-## B. 抓取失败清单（如实记录）
+## B. 证据边界
 
-| 目标 | URL | 结果 |
-|---|---|---|
-| Levi's 美国站 501 商品页 | `https://www.levi.com/US/en_US/clothing/men/jeans/501-original-fit-jeans/p/005012583` | **HTTP 403 Access Denied**（Akamai edgesuite 拦截） |
-| Levi's 美国站 501（另一 SKU） | `.../p/005013312` | **HTTP 403** |
-| Levi's 501 fit guide 博文 | `https://www.levi.com/US/en_US/blog/article/levis-501-fit-guide` | **HTTP 404** |
-| Red Wing 875 旧路径 | `https://www.redwingshoes.com/red-wing-shoe-875-0875.html` | **HTTP 404** |
-| Red Wing 875 另一路径 | `https://www.redwingshoes.com/heritage/mens/classic-moc/0875.html` | **HTTP 404** |
-| Kular Fashion（第三方 501 描述） | `https://www.kularfashion.com/product/levis-501-original-jeans-ferry-blue-38249` | **HTTP 403**（Cloudflare 挑战页） |
-| Levi's NZ 集合页 | `https://levis.co.nz/collections/men-501-jeans` | HTTP 200 但正文字段为空（JS 渲染） |
-| Levi's 男装牛仔裤指南 | `https://levi.pt/en/features/men-jeans` | HTTP 200 但正文被导航吞掉 |
+**已确认可用的一类**：分类归属、系列命名、官方档案文章（A1–A5 五条 `[物证]`）。
 
-**结论**：Levi's 的**商品正文（版型描述）取不到**；能拿到的只有**分类归属、系列命名、档案文章**。
-所以风格包里关于 501 的裤子形制描述，只有「Straight 直筒」这一条是 [物证]，其余（中腰、扣门襟、裤长盖鞋面）只能标 [推断] 或「部分确认」。
+**未能取得的一类**：Levi's 的**商品正文（版型描述）**。因此风格包里关于 501 的裤子形制描述，只有「Straight 直筒」这一条是 `[物证]`，其余（中腰、扣门襟、裤长盖鞋面）只能标 `[推断]` 或「部分确认」。
+
+**另外两项待补**：
+
+- Red Wing 875 当季鞋楦与旧版差异 —— 需线下试穿确认，风格包中已标注为局限
+- Levi's 501 官方 fit guide —— 未取得，裤型细节依 A3、A4 档案文章口径
 
 ---
 

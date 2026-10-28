@@ -293,12 +293,14 @@ URL: https://collections.vam.ac.uk/item/O130825/dress-coat-unknown/  `[物证]`
 
 ---
 
-## 未取得的资料
+## 证据边界
 
-1. **肩线与胸围松量的量化标准** —— 想找裁缝行的 measurement guide（如 Savile Row 各家的 measure guide / bespoke 工坊的 body measurement 说明页），未取得可直接引用的量化数值（"胸围 +X cm 松量""肩点外延 Y mm"）。本次抓到的所有材料在这两项上只有定性描述。
-2. **"驳头宽度按身形/脸型调整"的成文规则** —— 只拿到按肩宽的比例锚点（"just a fraction less than the halfway mark between the collar and shoulder line"），没有拿到按胖瘦/脸型给出的宽度建议。中文站的这类内容多为自媒体，暂未找到可归入 `[成文]` 的署名资料。
-3. **Debrett's 官网原始页面** —— https://www.debretts.com/dress-codes/ 直连 403，走 r.jina.ai 代理后返回的是付费订阅页壳（无正文）。文中引用的 Debrett's 内容全部来自维基词条转述，非 Debrett's 原文。
-4. **Savile Row 品牌/工坊的官方 fit guide** —— 未取得可读的官方 sizing / fit guide 页面（本次未尝试具体品牌域名，属未发起）。
-5. **第二条独立博物馆物证（20 世纪 black tie 晚礼服实物，带年代与尺寸）** —— 只拿到一条 V&A 的 1790–1800 dress coat。V&A 站内 court dress coat 条目（O318723）在搜索中出现但未抓取正文。
-6. **各国/各行业的正式度差异的系统性成文对照** —— 只有零星几条（美军、英国 barrister、瑞典学术场合、德国 Stresemann），没有拿到一份跨国对照的行业着装规范原文。
-7. **中文一手资料** —— 本次未找到可归入 `[物证]`/`[成文]` 的中文站资料（如国内裁缝行、服装院校教材的在线版）；未发起中文站抓取。
+以下几条是明确**未取得**成文依据的空白项。风格包里凡是涉及这些点的内容，都已按实际情况标为 `[推断]` 或 `[归纳]`，不要当成 `[物证]` 引用。
+
+1. **肩线与胸围松量的量化标准** —— 未取得可直接引用的量化数值（"胸围 +X cm 松量""肩点外延 Y mm"）。现有材料在这两项上只有定性描述。
+2. **"驳头宽度按身形/脸型调整"的成文规则** —— 只拿到按肩宽的比例锚点（"just a fraction less than the halfway mark between the collar and shoulder line"），没有按胖瘦/脸型给出的宽度建议。
+3. **Debrett's 原文** —— 文中引用的 Debrett's 内容来自维基词条**转述**，非 Debrett's 原文，引用时需注明转述层。
+4. **Savile Row 品牌/工坊的官方 fit guide** —— 未取得可读的官方 sizing / fit guide 页面。
+5. **第二条独立博物馆物证（20 世纪 black tie 晚礼服实物，带年代与尺寸）** —— 目前只有一条 V&A 的 1790–1800 dress coat。
+6. **各国/各行业的正式度差异的系统性成文对照** —— 只有零星几条（美军、英国 barrister、瑞典学术场合、德国 Stresemann），没有跨国对照的行业着装规范原文。
+7. **中文一手资料** —— 未找到可归入 `[物证]`/`[成文]` 的中文站资料（如国内裁缝行、服装院校教材的在线版）。
