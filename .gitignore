@@ -1,0 +1,17 @@
+# 个人衣柜档案（不入库）
+wardrobe.json
+wardrobe/
+*.local.json
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.log
+
+# 依赖与环境
+node_modules/
+.venv/
+__pycache__/

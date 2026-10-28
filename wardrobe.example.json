@@ -1,0 +1,25 @@
+# 个人衣柜档案（不入库）
+# 把本文件按 references/wardrobe-schema.md 的字段填好，改名为 wardrobe.json 使用。
+
+{
+  "meta": {
+    "owner": "your-name",
+    "updated": "YYYY-MM-DD",
+    "notes": "编号固定，之后所有方案都用编号说话。"
+  },
+  "items": [
+    {
+      "id": "W001",
+      "category": "outerwear",
+      "name": "示例：原牛夹克",
+      "color": "靛蓝",
+      "material": "棉 100%（未退浆丹宁）",
+      "size": "L",
+      "fits": "宽松",
+      "brand": "",
+      "acquired": "2024",
+      "condition": "new | worn | aged",
+      "style_tags": ["AV"]
+    }
+  ]
+}
