@@ -131,6 +131,8 @@ git clone https://github.com/<你的用户名>/wardrobe-stylist.git
 
 ```
 SKILL.md                         入口
+CHANGELOG.md                     更新记录
+LICENSE                          MIT
 references/
   ├─ router.md                    多个风格怎么分工 ← 最关键的调度规则
   ├─ wardrobe-schema.md           衣柜记录格式
@@ -140,7 +142,7 @@ references/
   ├─ system-prompt-lite.md        极简版
   ├─ test-cases.md                测试用例
   ├─ style-packs/                 五个风格，每个都写全了
-  └─ research/                    查资料时抓下来的原始记录（包括抓失败的）
+  └─ research/                    查资料时抓下来的原始记录
 ```
 
 ---
